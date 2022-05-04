@@ -1,0 +1,179 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] 
+{
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd 
+{
+    margin: 0;
+}
+
+/* Set core body defaults */
+body 
+{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Arial Nova', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    background-color: rgb(48, 38, 59);;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] 
+{
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) 
+{
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img 
+{
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * 
+{
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select 
+{
+    font: inherit;
+}
+
+@font-face {
+    font-family: 'Arial Nova';
+    src: url('../fonts/transfonter.org-20190925-085531/ArialNova-Light.woff2') format('woff2'),
+    url('../fonts/transfonter.org-20190925-085531/ArialNova-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.py-1
+{
+    padding: 30px 0;
+}
+
+h3
+{
+    font-size: 1.3rem;
+    margin: 30px 0;
+    font-weight: normal;
+}
+
+/* MODULES */
+.container
+{
+    padding: 0 10px;
+}
+
+hr
+{
+    color: rgb(199, 146, 183);
+}
+
+.bg1
+{
+    background-color:rgb(48, 38, 59);
+    color: #fff;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg2
+{
+    background-color:#fff;
+    color: #000;
+}
+
+.px-1
+{
+padding: 0 10px;
+}
+
+a
+{
+    color: rgb(199, 146, 183);
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(48, 38, 59);
+}
+
+.align-center
+{
+text-align: center;
+}
+
+.comments-section
+{
+    background-color: rgb(48, 38, 59);
+    color:#fff;
+}
+
+.details-05
+{
+  margin-bottom: 30px;
+}
+summary
+{
+    font-size: 1.3rem;
+}
+
+/* Убираем стандартный маркер Chrome */
+.details-05 summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+.details-05 > summary {
+  list-style: none;
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+.details-05 summary:after {
+  content: '[+]';
+  cursor: crosshair;
+}
+
+/* Добавляем собственный маркер для открытого состояния */
+.details-05[open] summary:before {
+  content: '[-]';
+  cursor: crosshair;
+}
